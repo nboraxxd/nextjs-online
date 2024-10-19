@@ -8,7 +8,10 @@ const heebo = Heebo({
 })
 
 export const metadata: Metadata = {
-  title: 'Personal Portfolio',
+  title: {
+    template: '%s | Personal Portfolio',
+    default: 'Personal Portfolio',
+  },
   description: 'Personal portfolio of a someone',
 }
 

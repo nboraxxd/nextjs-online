@@ -59,25 +59,25 @@ export const SOCIAL_LINKS = [
   {
     id: 1,
     accessiblitityLabel: 'Facebook of someone',
-    href: 'www.facebook.com',
+    href: 'https://facebook.com',
     icon: FacebookIcon,
   },
   {
     id: 2,
     accessiblitityLabel: 'Instagram of someone',
-    href: 'www.instagram.com',
+    href: 'https://instagram.com',
     icon: InstagramIcon,
   },
   {
     id: 3,
     accessiblitityLabel: 'X of someone',
-    href: 'www.instagram.com',
+    href: 'https://instagram.com',
     icon: XIcon,
   },
   {
     id: 4,
     accessiblitityLabel: 'LinkedIn of someone',
-    href: 'www.linkedin.com',
+    href: 'https://linkedin.com',
     icon: LinkedInIcon,
   },
 ] as const

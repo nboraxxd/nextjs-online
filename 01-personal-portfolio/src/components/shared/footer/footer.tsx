@@ -8,7 +8,13 @@ export default function Footer() {
         {SOCIAL_LINKS.map((social) => {
           const IconComp = social.icon
           return (
-            <Link key={social.id} href={social.href} className="inline-block p-1">
+            <Link
+              key={social.id}
+              href={social.href}
+              className="inline-block p-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconComp />
               <span className="sr-only">{social.accessiblitityLabel}</span>
             </Link>
