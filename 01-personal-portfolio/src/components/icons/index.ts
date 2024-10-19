@@ -1,0 +1,5 @@
+export { default as HamburgerIcon } from './hamburger'
+export { default as FacebookIcon } from './facebook'
+export { default as XIcon } from './x'
+export { default as InstagramIcon } from './instagram'
+export { default as LinkedInIcon } from './linkedin'

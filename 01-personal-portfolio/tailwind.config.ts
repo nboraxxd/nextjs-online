@@ -9,8 +9,22 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        lg: '920px',
+      },
+    },
     extend: {
+      screens: {
+        xs: '480px',
+        '2xl': '1400px',
+      },
       colors: {
+        dark: 'hsl(var(--dark))',
+        light: 'hsl(var(--light))',
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -56,6 +70,29 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        xs: 'calc(var(--radius) - 6px)',
+      },
+      fontSize: {
+        /** 18px size / 150% height / normal */
+        'normal-18': ['1.125rem', { lineHeight: '150%', fontWeight: '400' }],
+
+        /** 22px size / 136.364%% height / normal */
+        'normal-22': ['1.375rem', { lineHeight: '136.364%', fontWeight: '400' }],
+
+        /** 26px size / 153.846% height / bold */
+        'bold-26': ['1.625rem', { lineHeight: '153.846%', fontWeight: '700' }],
+
+        /** 32px size / 125% height / bold */
+        'bold-32': ['2rem', { lineHeight: '125%', fontWeight: '700' }],
+
+        /** 44px size / 136.364% height / bold */
+        'bold-44': ['2.75rem', { lineHeight: '136.364%', fontWeight: '700' }],
+      },
+      spacing: {
+        'header-height': 'var(--header-height)',
+      },
+      boxShadow: {
+        card: 'var(--card-shadow)',
       },
     },
   },
