@@ -21,8 +21,8 @@ export default function Header() {
             <HamburgerIcon className="h-[18px]" />
             <span className="sr-only">Toggle Navigation</span>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="min-w-40">
-            <Navbar className="sm:hidden" />
+          <DropdownMenuContent align="end" className="min-w-40 sm:hidden">
+            <Navbar className="sm:hidden" isDropdown={true} />
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
